@@ -18,10 +18,14 @@ function Mailar() {
 
         emailjs.sendForm('service_dwv2pht','template_u25oox8',e.target,
         'lLC-eudMUF0EL6RM2').then(res=>{
+          alert("Mail Send Successfuly");
             console.log(res);
         }).catch(err=>{
+          alert(err);
             console.log(err)
         });
+
+        
 
     }
   return (
